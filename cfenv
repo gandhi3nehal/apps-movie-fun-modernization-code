@@ -1,0 +1,18 @@
+cf set-env album-service S3_ACCESSKEY AKIAIZ6AGAI5XXX5YF3A
+cf set-env album-service S3_BUCKETNAME cf-b4c57735-2287-433e-9d0b-13e23ed3ce04
+cf set-env album-service S3_ENDPOINTURL http://s3.amazonaws.com
+cf set-env album-service S3_SECRETKEY sT9ahQNmTqkuFSGsANaaaYPtIQtODvK2B8UHDaDy
+
+cf set-env movie-service S3_ACCESSKEY AKIAIZ6AGAI5XXX5YF3A
+cf set-env movie-service S3_BUCKETNAME cf-b4c57735-2287-433e-9d0b-13e23ed3ce04
+cf set-env movie-service S3_ENDPOINTURL http://s3.amazonaws.com
+cf set-env movie-service S3_SECRETKEY sT9ahQNmTqkuFSGsANaaaYPtIQtODvK2B8UHDaDy
+
+cf set-env movie-fun-app S3_ACCESSKEY AKIAIZ6AGAI5XXX5YF3A
+cf set-env movie-fun-app S3_BUCKETNAME cf-b4c57735-2287-433e-9d0b-13e23ed3ce04
+cf set-env movie-fun-app S3_ENDPOINTURL http://s3.amazonaws.com
+cf set-env movie-fun-app S3_SECRETKEY sT9ahQNmTqkuFSGsANaaaYPtIQtODvK2B8UHDaDy
+
+cf restage movie-fun-app
+cf restage movie-service
+cf restage album-service
